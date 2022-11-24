@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <p>Please select the type of Password you want to generate:</p>
+      <form id="new-form">
+        <input type="radio" id="wp" name="radio" class="redio" value="0" />
+        <label for="wp">Weak Password</label><br />
+        <input type="radio" id="sp" name="radio" class="redio" value="1" />
+        <label for="sp">Strong Password</label><br />
+        <input type="radio" id="ssp" name="radio" class="redio" value="2" />
+        <label for="ssp">Super Strong Password</label>
+        <br />
+        <button id="btn" type="submit">Generate Password</button>
+      </form>
+      <input id="display" type="text" readonly="true" />
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
